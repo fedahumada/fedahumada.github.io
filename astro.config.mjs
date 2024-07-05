@@ -6,9 +6,9 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://fedahumada.github.io',
   integrations: [tailwind(), robotsTxt()],
   output: "server",
-  site: 'https://fedahumada.github.io',
   adapter: node({
     mode: "standalone"
   })
