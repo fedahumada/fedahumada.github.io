@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+{
+    date: "2024-Present",
+    title: "UE5 - C++ NETWORK DEVELOPER",
+    company: "FROMDUST STUDIO",
+    description: "Responsible for implementing Epic Online Services (Back-End Services) for networking features, including Peer-to-Peer and Dedicated Servers, using Azure cloud services.",
+    link: "https://fromdust.studio/",
+  },
+  {
+    date: "2023-2024",
+    title: "UE5 - C++ GAMEPLAY DEVELOPER",
+    company: "INSIDE DARK STUDIO",
+    description: "Responsible for implementing Steam Online Services for networking, integrating replication in gameplay, optimizing environments, and creating builds for Win and Mac. Additionally, I worked on animations, responsive UIs, and cinematics for product showcases. My role involved a mix of team collaboration and individual tasks, ensuring high-quality results across various aspects of the project.",
+    link: "https://insidedarkstudio.com/",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
