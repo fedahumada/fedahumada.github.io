@@ -3,7 +3,8 @@ const personalImageAlt = "Ahumada Federico"
 import Badge from "../components/Badge.astro"
 import LinkedInIcon from "../components/icons/LinkedIn.astro"
 import GitHubIcon from "../components/icons/GitHub.astro"
-import MailIcon from "../components/icons/Mail.astro"
+import PatreonIcon from "../components/icons/Patreon.astro"
+import YoutubeIcon from "../components/icons/Youtube.astro"
 import SocialPill from "../components/SocialPill.astro"
 ---
 
@@ -35,10 +36,6 @@ import SocialPill from "../components/SocialPill.astro"
     <strong>Unreal Engine Game Developer</strong> specialized in network and multiplayer gameplay.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
-    <SocialPill href="mailto:fahumadaok@gmail.com">
-      <MailIcon class="size-4" />
-      Contact me
-    </SocialPill>
     <SocialPill href="https://www.linkedin.com/in/fedahumada/">
       <LinkedInIcon class="size-4" />
       LinkedIn
@@ -46,6 +43,14 @@ import SocialPill from "../components/SocialPill.astro"
     <SocialPill href="https://www.github.com/fedahumada/">
       <GitHubIcon class="size-4" />
       GitHub
+    </SocialPill>
+    <SocialPill href="https://www.patreon.com/fedahumada">
+      <PatreonIcon class="size-4" />
+      Patreon
+    </SocialPill>
+    <SocialPill href="https://www.youtube.com/channel/UCIQKsRB6SaiWnN4Cd8hJS2w">
+      <YoutubeIcon class="size-4" />
+      Youtube
     </SocialPill>
   </nav>
 </div>
