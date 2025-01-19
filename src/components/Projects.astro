@@ -29,16 +29,14 @@ const PROJECTS = [
     description: "With over 20k downloads, this plugin simplifies the management of multiplayer game sessions by harnessing the power of Epic Online Services (EOS). Ideal for beginners and experienced developers alike, it provides the foundational tools you need to kickstart your multiplayer projects effortlessly.",
     link: "https://www.fab.com/listings/0adf3cf8-dcc2-453d-a1e9-228dbb2263ad",
     github: "",
-    image: "/projects/eos-go-community.webp",
-    tags: [],
+    image: "/projects/eos-go-community.webp"
   },
   {
     title: "EOS Go - Ultimate",
-    description: "This premium plugin offers an enhanced user interface and a wider range of session management features to meet complex multiplayer needs. The Ultimate version ensures a seamless, polished, and feature-rich experience, making it the ultimate solution for building professional-grade multiplayer games.",
+    description: "This premium plugin offers an enhanced user interface and a wider range of session management features to meet complex multiplayer needs. The Ultimate ve ensures a seamless, polished, and feature-rich experience, making it the ultimate solution for building professional-grade multiplayer games.",
     link: "https://www.fab.com/listings/5bfd29f7-9ffc-4d23-a5b7-4e547528cf1d",
     github: "",
-    image: "/projects/eos-go-ultimate.webp",
-    tags: [],
+    image: "/projects/eos-go-ultimate.webp"
   },
    {
     title: "AWS Go Plugin (Work in Progress)",
@@ -46,15 +44,13 @@ const PROJECTS = [
     link: "",
     github: "",
     image: "/projects/aws-go-community.webp",
-    tags: [],
   },
    {
     title: "UMind Plugin (Work in Progress)",
     description: "UMind is a working in progress AI-powered assistant built directly into Unreal Engine, allowing developers to find solutions without leaving the editor. Designed to maintain project privacy, UMind offers general coding guidance and intelligent suggestions. It enhances your workflow, helping you troubleshoot, optimize, and implement features more efficiently, all within the Unreal Engine environment.",
     link: "",
     github: "",
-    image: "/projects/u-mind.webp",
-    tags: [],
+    image: "/projects/u-mind.webp"
   },
   // {
   //   title: "EOS System - Multiplayer Integration Sample",
@@ -85,7 +81,7 @@ const PROJECTS = [
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image, title, description, link, github }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
@@ -98,7 +94,7 @@ const PROJECTS = [
       {title}
     </h3>
     <div class="flex flex-wrap mt-2">
-      <ul class="flex flex-row mb-2 gap-x-2">
+      {/* <ul class="flex flex-row mb-2 gap-x-2">
           {tags.map((tag) => (
             <li>
               <span
@@ -109,7 +105,7 @@ const PROJECTS = [
               </span>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
       <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
