@@ -24,21 +24,37 @@ const TAGS = {
   },
 }
 const PROJECTS = [
-{
-    title: "EOS Go - Unreal Engine Plugin",
-    description: "With +15k downloads, EOS Go is a fundamental plugin that every developer should consider adding to their toolkit. This plugin is designed to simplify the management of multiplayer game sessions and lobbies by leveraging Epic Online Services (EOS).",
-    link: "https://www.unrealengine.com/marketplace/en-US/product/08cd49638841432b8688a9de3ecfb87b",
-    github: "https://github.com/fedahumadastudio?view_as=public",
-    image: "/projects/eos-go.webp",
-    tags: [TAGS.UNREAL, TAGS.CPLUSPLUS],
+ {
+    title: "EOS Go - Community",
+    description: "With over 20k downloads, this plugin simplifies the management of multiplayer game sessions by harnessing the power of Epic Online Services (EOS). Ideal for beginners and experienced developers alike, it provides the foundational tools you need to kickstart your multiplayer projects effortlessly.",
+    link: "https://www.fab.com/listings/0adf3cf8-dcc2-453d-a1e9-228dbb2263ad",
+    github: "",
+    image: "/projects/eos-go-community.webp",
+    tags: [],
+  },
+  {
+    title: "EOS Go - Ultimate",
+    description: "This premium plugin offers an enhanced user interface and a wider range of session management features to meet complex multiplayer needs. The Ultimate version ensures a seamless, polished, and feature-rich experience, making it the ultimate solution for building professional-grade multiplayer games.",
+    link: "https://www.fab.com/listings/5bfd29f7-9ffc-4d23-a5b7-4e547528cf1d",
+    github: "",
+    image: "/projects/eos-go-ultimate.webp",
+    tags: [],
   },
    {
-    title: "UMind - Unreal Engine Plugin",
+    title: "AWS Go Plugin (Work in Progress)",
+    description: "Designed to empower developers with seamless cloud integration for their games. Whether creating single-player or multiplayer experiences, this plugin focuses on simplicity and efficiency, providing a streamlined approach to leveraging cloud-based solutions. With AWS Go, game developers can focus on crafting engaging gameplay while leaving the complexities of cloud integration behind.",
+    link: "",
+    github: "",
+    image: "/projects/aws-go-community.webp",
+    tags: [],
+  },
+   {
+    title: "UMind Plugin (Work in Progress)",
     description: "UMind is a working in progress AI-powered assistant built directly into Unreal Engine, allowing developers to find solutions without leaving the editor. Designed to maintain project privacy, UMind offers general coding guidance and intelligent suggestions. It enhances your workflow, helping you troubleshoot, optimize, and implement features more efficiently, all within the Unreal Engine environment.",
     link: "",
     github: "",
     image: "/projects/u-mind.webp",
-    tags: [TAGS.UNREAL, TAGS.CPLUSPLUS],
+    tags: [],
   },
   // {
   //   title: "EOS System - Multiplayer Integration Sample",
@@ -107,7 +123,7 @@ const PROJECTS = [
           {link && (
             <LinkButton href={link}>
               <Link class="size-4" />
-              UE Marketplace
+              See it on FAB!
             </LinkButton>
           )}
         </footer>
