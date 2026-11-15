@@ -8,6 +8,7 @@ export interface Project {
   capabilities: string[];
   image: string;
   video?: string;
+  downloadUrl?: string;
   url: string;
 }
 export const projects: Project[] = [
@@ -54,6 +55,7 @@ export const projects: Project[] = [
     ],
     image: "projects/gas.webp",
     video: "wfe4FPduEwU",
+    downloadUrl: "https://drive.google.com/file/d/1ugloHx1i75s35FX7Sjb5fdHodmJ7SmUD/view",
     url: "https://www.youtube.com/watch?v=wfe4FPduEwU",
   },
   {
@@ -75,7 +77,7 @@ export const projects: Project[] = [
       "Two versions with different feature sets and pricing",
       "Online and multiplayer development workflows",
     ],
-    image: "projects/eos-go-community.webp",
+    image: "projects/eos-go-plugins.jpg",
     url: "https://www.fab.com/sellers/Fedahumada%20Studio",
   },
 ];
@@ -94,6 +96,6 @@ export const contributions = [
     details:
       "Unreal Engine UI, multiplayer session creation and joining, friend lists and friend joining, and networking systems with UI integration.",
     url: "https://play.google.com/store/apps/details?id=com.oxyspace",
-    label: "View project listing",
+    label: "View Google Play page",
   },
 ];

@@ -1,4 +1,4 @@
-import { ArrowUpRight, Play, Check } from "lucide-react";
+import { ArrowUpRight, Play, Check, Download } from "lucide-react";
 import type { Project } from "../data/projects";
 export function ProjectCard({
   project,
@@ -16,7 +16,7 @@ export function ProjectCard({
         alt={
           project.video
             ? `${project.title} demonstration thumbnail`
-            : "EOS Go Community plugin artwork"
+            : "EOS Go Plugins artwork representing both versions"
         }
         loading="lazy"
         width="960"
@@ -80,6 +80,14 @@ export function ProjectCard({
           ))}
         </ul>
         <div className="project-actions">
+          {project.downloadUrl && (
+            <div className="build-download">
+              <a className="button primary" href={project.downloadUrl} target="_blank" rel="noopener noreferrer">
+                <Download size={18} /> Download Playable Build
+              </a>
+              <p>Shipping build · ZIP on Google Drive</p>
+            </div>
+          )}
           {project.video && (
             <button className="text-link" onClick={() => onWatch(project)}>
               <Play size={16} /> Watch Demo

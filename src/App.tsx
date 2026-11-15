@@ -116,10 +116,6 @@ export default function App() {
       <main id="main">
         <section className="hero container" aria-labelledby="hero-title">
           <div className="hero-copy">
-            <p className="eyebrow">
-              <span className="small-line" /> GAME DEVELOPMENT · QUALITY ·
-              SYSTEMS
-            </p>
             <h1 id="hero-title">
               Federico
               <br />
@@ -158,15 +154,6 @@ export default function App() {
                 height="1254"
                 fetchPriority="high"
               />
-              <div className="portrait-caption">
-                <span>FEDERICO AHUMADA</span>
-                <span>DEVELOPER / BUILDER</span>
-              </div>
-            </div>
-            <div className="portrait-foot">
-              <Code2 size={18} />
-              <span>C++ & Blueprints</span>
-              <span>Unreal Engine</span>
             </div>
           </div>
           <div className="hero-bottom">
@@ -180,7 +167,6 @@ export default function App() {
           <SectionHeading
             number="01"
             title="Technical Portfolio"
-            description="Gameplay systems, automated validation, and tools built for Unreal Engine."
           />
           <div className="projects">
             {projects.map((p, i) => (
@@ -193,7 +179,7 @@ export default function App() {
             ))}
           </div>
           <div className="additional">
-            <h3>Additional Game Development Work</h3>
+            <h3>Professional Work with Indie Studios</h3>
             <div className="contributions">
               {contributions.map((c) => (
                 <article key={c.title}>

@@ -447,6 +447,35 @@ nav a:last-child {
   padding-top: 20px;
   border-top: 1px solid #2b3846;
 }
+.build-download {
+  flex-basis: 100%;
+  margin-bottom: 12px;
+}
+.build-download .button {
+  width: 100%;
+}
+.build-download p {
+  margin-top: 8px;
+  font-size: 11px;
+}
+/* Share content rows so both demo cards align even when text wraps differently. */
+@media (min-width: 701px) {
+  .project:has(.project-media button) {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 8;
+    row-gap: 0;
+  }
+  .project:has(.project-media button) .project-body {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 7;
+    row-gap: 0;
+  }
+  .project:has(.project-media button) .project-actions {
+    align-content: end;
+  }
+}
 .text-link {
   display: inline-flex;
   gap: 8px;
